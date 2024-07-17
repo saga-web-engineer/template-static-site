@@ -30,7 +30,6 @@ Voltaで管理しています。
     ```
 
 ## format
-ts、scssファイルはhuskyを用いてコミット時にフォーマットしますが、自身でフォーマットすることもできます。
 ```
 npm run format:all
 ```
