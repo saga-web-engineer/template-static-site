@@ -1,0 +1,38 @@
+@use 'sass:map';
+
+$breakpoints: (
+  xs: null,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+:root {
+  // color
+  --white-color-primary: #fff;
+  --black-color-primary: #333;
+  --black-color-secondary: #000;
+  --gray-color-primary: #505050;
+  --gray-color-secondary: #ebebeb;
+  --gray-color-tertiary: #cac9c9;
+  --gray-color-quaternary: #b4b4b4;
+  --brown-color-primary: #5e3528;
+  --brown-color-secondary: #fffcf7;
+  --yellow-color-primary: #ffdc1b;
+  --red-color-primary: #ec3348;
+  --green-color-primary: #3cbb84;
+  --shadow-color: rgb(16 18 39 / 0.3);
+
+  // font
+  --font-gothic: 'Noto Sans JP', sans-serif;
+
+  // easing
+  --easing-hover: ease-in-out;
+  --easing-faded: cubic-bezier(0, 0, 0.2, 1);
+  --easing-overlay: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  // duration
+  --duration-primary: 0.3s;
+}

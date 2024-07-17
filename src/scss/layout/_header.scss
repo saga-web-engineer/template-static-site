@@ -1,0 +1,13 @@
+@use '../tool/' as t;
+
+.header {
+  top: 0;
+  left: 0;
+  padding-block: 0.5em;
+  background-color: var(--white-color-primary);
+  box-shadow: 0 0 10px 0 var(--black-color-primary);
+}
+
+.header__title {
+  font-size: 2em;
+}

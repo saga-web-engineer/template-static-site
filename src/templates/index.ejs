@@ -1,0 +1,62 @@
+<%
+  const meta = {
+    title: 'Static Site Template',
+    description: 'EJS + Sass(scss) + TypeScriptで静的なWebサイトを構築するためのテンプレート',
+    url: 'https://exmaple.com'
+  };
+
+  const path = "/";
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%- include('include/_head', {head: meta}) %>
+</head>
+<body>
+  <div class="layout u-grid">
+    <%- include('include/_header') %>
+    <main class="p-top">
+      <div class="c-wrapper u-h-full u-mx-auto">
+        <div class="p-top-logo u-grid u-h-full u-items-center">
+          <%
+            const logo = [
+              {
+                name: 'EJS',
+                path: 'ejs',
+                width: '120',
+                height: '120'
+              },
+              {
+                name: 'Sass(scss)',
+                path: 'sass',
+                width: '160',
+                height: '120'
+              },
+              {
+                name: 'TypeScript',
+                path: 'typescript',
+                width: '120',
+                height: '120'
+              }
+            ];
+
+            logo.forEach(value => {
+          %>
+          <figure class="p-top-logo__img u-grid u-justify-center">
+            <img
+              class="u-mx-auto"
+              src="<%= path %>assets/img/top/<%= value.path %>.svg"
+              alt=""
+              width="<%= value.width %>"
+              height="<%= value.height %>"
+            >
+            <figcaption class="u-text-center"><%= value.name %></figcaption>
+          </figure>
+          <% }) %>
+        </ul>
+      </div>
+    </main>
+    <%- include('include/_footer') %>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<%
+  const meta = {
+    title: 'About | Static Site Template',
+    description: 'EJS + Sass(scss) + TypeScriptで静的なWebサイトを構築するためのテンプレートのAboutページ',
+    url: 'https://exmaple.com/about/'
+  };
+
+  const path = "/";
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%- include('../include/_head', {head: meta}) %>
+</head>
+<body>
+  <div class="layout u-grid">
+    <%- include('../include/_header') %>
+    <main class="about">
+      <h2 class="u-grid u-items-center u-justify-center u-h-full">About</h2>
+    </main>
+    <%- include('../include/_footer') %>
+  </div>
+</body>
+</html>

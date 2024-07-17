@@ -1,0 +1,6 @@
+@use '../tool/' as t;
+
+.footer {
+  padding-block: 1em;
+  border-block-start: solid 1px var(--gray-color-tertiary);
+}

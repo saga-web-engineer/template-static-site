@@ -1,0 +1,25 @@
+@use '../tool/' as t;
+
+.p-top {
+  background: radial-gradient(
+      105.68% 45.69% at 92.95% 50%,
+      rgb(105 244 253 / 50%) 0,
+      rgb(160 255 244 / 9.5%) 53.91%,
+      rgb(254 216 255 / 0%) 100%
+    ),
+    radial-gradient(103.18% 103.18% at 90.11% 102.39%, #c9fff2 0, rgb(230 255 250 / 0%) 100%),
+    radial-gradient(90.45% 90.45% at 87.84% 9.55%, #ffd2f5 0, rgb(254 219 246 / 0%) 100%),
+    linear-gradient(135.66deg, rgb(0 122 255 / 60%) 14.89%, rgb(216 202 254 / 0%) 74.33%);
+}
+
+.p-top-logo {
+  gap: 1em;
+
+  @include t.responsive(sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p-top-logo__img {
+  gap: 0.5em;
+}

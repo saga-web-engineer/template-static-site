@@ -1,0 +1,56 @@
+@use '../tool/' as t;
+
+// margin-top
+.u-mt-0 {
+  margin-top: 0;
+
+  &\:md { @include t.responsive(md) { margin-top: 0; }}
+  &\:lg { @include t.responsive(lg) { margin-top: 0; }}
+}
+
+.u-mt-auto {
+  margin-top: auto;
+}
+
+// margin-left
+.u-ml-auto {
+  margin-left: auto;
+
+  &\:md { @include t.responsive(md) { margin-left: auto; }}
+}
+
+.u-ml-0 {
+  margin-left: 0;
+
+  &\:md { @include t.responsive(md) { margin-left: 0; }}
+  &\:lg { @include t.responsive(lg) { margin-left: 0; }}
+}
+
+// margin-right
+.u-mr-0 {
+  margin-right: 0;
+
+  &\:md { @include t.responsive(md) { margin-right: 0; }}
+  &\:lg { @include t.responsive(lg) { margin-right: 0; }}
+}
+
+// margin-inline
+.u-mx-0 {
+  margin-inline: 0;
+
+  &\:md { @include t.responsive(md) { margin-inline: 0; }}
+  &\:lg { @include t.responsive(lg) { margin-inline: 0; }}
+}
+
+.u-mx-auto {
+  margin-inline: auto;
+
+  &\:md { @include t.responsive(md) { margin-inline: auto; }}
+}
+
+// margin-block
+.u-my-auto {
+  margin-block: auto;
+
+  &\:lg { @include t.responsive(lg) { margin-block: auto; }}
+}

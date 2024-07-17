@@ -1,0 +1,17 @@
+@use '../tool/' as t;
+
+.u-z-minus {
+  z-index: -1;
+}
+
+.u-z-bottom {
+  z-index: 1;
+}
+
+.u-z-middle {
+  z-index: 5;
+}
+
+.u-z-top {
+  z-index: 10;
+}

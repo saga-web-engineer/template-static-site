@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "leonzalion.vscode-ejs",
+    "dbaeumer.vscode-eslint",
+    "saikou9901.evilinspector",
+    "tombonnike.vscode-status-bar-format-toggle",
+    "wix.vscode-import-cost",
+    "oderwat.indent-rainbow",
+    "esbenp.prettier-vscode",
+    "yoavbls.pretty-ts-errors",
+    "stylelint.vscode-stylelint",
+    "mattpocock.ts-error-translator"
+  ]
+}
