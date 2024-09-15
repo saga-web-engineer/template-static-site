@@ -5,7 +5,7 @@
     "stylelint-prettier/recommended"
   ],
 
-  "plugins": ["stylelint-order", "stylelint-prettier"],
+  "plugins": ["stylelint-order"],
 
   "ignoreFiles": [
     "**/node_ modules/**",
