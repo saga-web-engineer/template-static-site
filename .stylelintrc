@@ -5,10 +5,10 @@
     "stylelint-prettier/recommended"
   ],
 
-  "plugins": ["stylelint-order"],
+  "plugins": ["stylelint-order", "stylelint-prettier"],
 
   "ignoreFiles": [
-    "**/node_ modules/**",
+    "**/node_modules/**",
     "dist/assets/css/*.css",
     "src/scss/foundation/*.scss",
     "src/scss/tool/_variables.scss",
