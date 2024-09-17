@@ -29,7 +29,7 @@
         "useAwait": "error"
       }
     },
-    "ignore": ["**/dist"]
+    "ignore": []
   },
   "javascript": { "formatter": { "quoteStyle": "single" } },
   "overrides": [{ "include": [] }]
