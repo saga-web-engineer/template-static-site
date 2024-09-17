@@ -1,4 +1,3 @@
-/* eslint @typescript-eslint/no-var-requires: "off" */
 const path = require('node:path');
 const TerserPlugin = require('terser-webpack-plugin');
 
@@ -7,7 +6,7 @@ module.exports = {
 
   // メインとなるTypeScriptファイル（エントリーポイント）
   entry: {
-    index: `./src/ts/index.ts`,
+    index: './src/ts/index.ts',
   },
 
   output: {
