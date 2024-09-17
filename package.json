@@ -16,9 +16,8 @@
     "prewatch:all": "run-s delete:dist copyfile",
     "watch:all": "run-p watch:ejs watch:css watch:ts start:server",
     "format:scss": "stylelint --fix \"**/*.scss\"",
-    "format:ts": "prettier --cache --write src/ts/*.ts",
-    "lint:ts": "eslint --fix src/ts/*.ts",
-    "format:all": "run-p format:scss format:ts lint:ts",
+    "format:ts": "npx @biomejs/biome check --write src/ts/",
+    "format:all": "run-p format:scss format:ts",
     "min:css": "cleancss -o dist/assets/css/style.css dist/assets/css/style.css",
     "delete:map": "rimraf -g dist/**/*.map",
     "prepare:all": "run-p min:css delete:map"
