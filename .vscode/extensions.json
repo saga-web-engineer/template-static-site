@@ -1,10 +1,10 @@
 {
   "recommendations": [
+    "biomejs.biome",
     "formulahendry.auto-rename-tag",
     "streetsidesoftware.code-spell-checker",
     "editorconfig.editorconfig",
     "leonzalion.vscode-ejs",
-    "dbaeumer.vscode-eslint",
     "saikou9901.evilinspector",
     "tombonnike.vscode-status-bar-format-toggle",
     "wix.vscode-import-cost",
