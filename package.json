@@ -16,7 +16,7 @@
     "prewatch:all": "run-s delete:dist copyfile",
     "watch:all": "run-p watch:ejs watch:css watch:ts start:server",
     "format:scss": "stylelint --fix \"**/*.scss\"",
-    "format:ts": "npx @biomejs/biome check --write src/ts/",
+    "format:ts": "biome check --write src/ts/",
     "format:all": "run-p format:scss format:ts",
     "min:css": "cleancss -o dist/assets/css/style.css dist/assets/css/style.css",
     "delete:map": "rimraf -g dist/**/*.map",
@@ -33,10 +33,10 @@
     "safari > 14, ios > 14"
   ],
   "devDependencies": {
-    "@biomejs/biome": "1.9.1",
+    "@biomejs/biome": "1.9.2",
     "@types/node": "^20.10.8",
     "autoprefixer": "^10.4.20",
-    "browser-sync": "^3.0.2",
+    "browser-sync": "^3.0.3",
     "chokidar-cli": "^3.0.0",
     "clean-css-cli": "^5.6.3",
     "ejs-cli": "^2.2.3",
@@ -47,16 +47,16 @@
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
-    "sass": "^1.78.0",
+    "sass": "^1.79.4",
     "stylelint": "^16.9.0",
-    "stylelint-config-recess-order": "^5.1.0",
+    "stylelint-config-recess-order": "^5.1.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-order": "^6.0.4",
     "stylelint-prettier": "^5.0.2",
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
     "typescript": "^5.6.2",
-    "webpack": "^5.94.0",
+    "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4"
   }
 }
