@@ -24,35 +24,12 @@
   }
 }
 
-@mixin landscape($name, $until: false) {
-  // マップ型で定義されていない値が呼び出された時はエラーを返す
-  @if not map.has-key(t.$breakpoints, $name) {
-    @error "指定されたブレークポイントは定義されていません。" + "指定できるブレークポイントは次のとおりです。 -> #{map.keys($breakpoints)}";
-  }
-
-  $breakpoint: map.get(t.$breakpoints, $name);
-
-  @if $breakpoint {
-    @if $until {
-      @media not all and (min-height: $breakpoint) {
-        @content;
-      }
-    } @else {
-      @media screen and (min-height: $breakpoint) {
-        @content;
-      }
-    }
-  } @else {
-    @content;
-  }
-}
-
 @mixin hover($effect: '') {
   &:focus-visible {
     @content;
   }
 
-  @media (hover: hover) and (pointer: fine) {
+  @media (any-hover: hover) {
     &:hover {
       @content;
     }
@@ -62,23 +39,5 @@
     &:focus-within {
       @content;
     }
-  }
-}
-
-@mixin leading-trim($line-height) {
-  &::before,
-  &::after {
-    display: block;
-    width: 0;
-    height: 1px;
-    content: '';
-  }
-
-  &::before {
-    margin-bottom: calc((1 - #{$line-height}) * 0.5em);
-  }
-
-  &::after {
-    margin-top: calc((1 - #{$line-height}) * 0.5em);
   }
 }

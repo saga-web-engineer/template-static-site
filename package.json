@@ -23,8 +23,8 @@
     "prepare:all": "run-p min:css delete:map"
   },
   "volta": {
-    "node": "20.10.0",
-    "npm": "10.2.3"
+    "node": "22.11.0",
+    "npm": "10.9.0"
   },
   "browserslist": [
     "> 0.2%, not dead",
@@ -33,8 +33,8 @@
     "safari > 14, ios > 14"
   ],
   "devDependencies": {
-    "@biomejs/biome": "1.9.3",
-    "@types/node": "^20.10.8",
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.10.2",
     "autoprefixer": "^10.4.20",
     "browser-sync": "^3.0.3",
     "chokidar-cli": "^3.0.0",
@@ -42,21 +42,21 @@
     "ejs-cli": "^2.2.3",
     "fs-extra": "^11.2.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.47",
+    "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
     "postcss-sort-media-queries": "^5.2.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
-    "sass": "^1.79.5",
-    "stylelint": "^16.10.0",
+    "sass": "^1.82.0",
+    "stylelint": "^16.11.0",
     "stylelint-config-recess-order": "^5.1.1",
-    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-order": "^6.0.4",
     "stylelint-prettier": "^5.0.2",
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
-    "typescript": "^5.6.3",
-    "webpack": "^5.95.0",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
   }
 }
