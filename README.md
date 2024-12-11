@@ -3,8 +3,8 @@ EJS + Sass + TypeScriptで静的なWebサイトを構築するためのテンプ
 
 ## Version
 Voltaで管理しています。
-- Node 20.10.0
-- npm 10.2.3
+- Node 22.11.0
+- npm 10.9.0
 
 ## start
 1.  **install**  
