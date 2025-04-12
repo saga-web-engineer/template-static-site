@@ -1,7 +1,8 @@
 @use '../tool/' as t;
 
 .p-top {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       105.68% 45.69% at 92.95% 50%,
       rgb(105 244 253 / 50%) 0,
       rgb(160 255 244 / 9.5%) 53.91%,
