@@ -1,8 +1,12 @@
-const path = require("node:path");
-const { rspack } = require("@rspack/core");
+import { defineConfig } from "@rspack/cli";
+import { rspack } from "@rspack/core";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('@rspack/core').Configuration} */
-module.exports = (env, argv) => {
+export default defineConfig((env, argv) => {
   const isProduction = argv.mode === "production";
 
   return {
@@ -44,19 +48,22 @@ module.exports = (env, argv) => {
         },
       ],
     },
-    // パッケージのライセンス情報をjsファイルの中に含めない
+
     optimization: {
       minimizer: isProduction
         ? [
             new rspack.SwcJsMinimizerRspackPlugin({
+              // パッケージのライセンス情報をjsファイルの中に含めない
               extractComments: false,
             }),
           ]
         : [],
     },
+
     resolve: {
       extensions: [".ts", ".js", ".json"],
     },
+
     // 開発用設定
     devServer: {
       hot: !isProduction,
@@ -69,4 +76,4 @@ module.exports = (env, argv) => {
       },
     },
   };
-};
+});

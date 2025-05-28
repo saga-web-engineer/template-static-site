@@ -1,6 +1,7 @@
 {
   "name": "template-static-site",
   "private": true,
+  "type": "module",
   "scripts": {
     "start:server": "browser-sync start -s dist -w src/*.html src/assets/css/*.css src/assets/js/*.js",
     "compile:ejs": "ejs-cli -b src/templates/ \"/**/*.ejs\" -o dist/ -e src/templates/include",
@@ -9,7 +10,7 @@
     "postcss": "postcss dist/assets/css/style.css -u autoprefixer postcss-sort-media-queries -o dist/assets/css/style.css",
     "compile:css": "run-s sass postcss",
     "watch:css": "chokidar \"src/scss/\" --command \"npm run compile:css\" --initial",
-    "compile:ts": "rspack build --mode production",
+    "compile:ts": "rspack build --mode=production",
     "watch:ts": "rspack dev",
     "delete:dist": "rimraf dist",
     "copyfile": "node copyfile.mjs",
