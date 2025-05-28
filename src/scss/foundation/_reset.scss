@@ -4,13 +4,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-inline-size: 0;
+}
+
+:where(
+  :any-link,
+  button:not(disabled),
+  [type='button']:not(disabled),
+  [type='reset']:not(disabled),
+  [type='submit']:not(disabled),
+  label[for],
+  select,
+  summary,
+  [role='tab'],
+  [role='button']
+) {
+  cursor: pointer;
 }
 
 a, area, button, input, label, select, summary, textarea, [tabindex] {
   touch-action: manipulation;
 }
 
-input, button, textarea, select, pre {
+input, button, textarea, select, pre, address {
   font: inherit;
 }
 
@@ -21,8 +37,8 @@ img {
 }
 
 textarea {
-  overflow: auto;
   resize: none;
+  field-sizing: content;
 }
 
 fieldset {
@@ -30,32 +46,17 @@ fieldset {
   border: none;
 }
 
-address {
-  font-style: normal;
-  line-height: inherit;
-}
-
-[role=button] {
-  cursor: pointer;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
 ul:where([class]),
-ol:where([class]) {
-  list-style: none;
-}
-
-main {
-	overflow-x: hidden;
+ol:where([class]),
+summary {
+  list-style-type: '';
 }
 
 summary {
-  list-style: none;
-  cursor: pointer;
-
   &::-webkit-details-marker {
     display: none;
   }
@@ -64,10 +65,6 @@ summary {
 button {
   border: none;
   appearance: none;
-}
-
-button:not(disabled), [type=button]:not(disabled), [type=reset]:not(disabled), [type=submit]:not(disabled) {
-  cursor: pointer;
 }
 
 a {
