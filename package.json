@@ -9,8 +9,8 @@
     "postcss": "postcss dist/assets/css/style.css -u autoprefixer postcss-sort-media-queries -o dist/assets/css/style.css",
     "compile:css": "run-s sass postcss",
     "watch:css": "chokidar \"src/scss/\" --command \"npm run compile:css\" --initial",
-    "compile:ts": "webpack --mode production",
-    "watch:ts": "webpack  --mode production --watch",
+    "compile:ts": "rspack build --mode production",
+    "watch:ts": "rspack dev",
     "delete:dist": "rimraf dist",
     "copyfile": "node copyfile.mjs",
     "prewatch:all": "run-s delete:dist copyfile",
@@ -34,6 +34,8 @@
   ],
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@rspack/cli": "^1.3.12",
+    "@rspack/core": "^1.3.12",
     "@types/node": "^22.10.2",
     "autoprefixer": "^10.4.21",
     "browser-sync": "^3.0.4",
@@ -53,10 +55,6 @@
     "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-order": "^6.0.4",
     "stylelint-prettier": "^5.0.3",
-    "terser-webpack-plugin": "^5.3.14",
-    "ts-loader": "^9.5.2",
-    "typescript": "^5.8.3",
-    "webpack": "^5.99.5",
-    "webpack-cli": "^6.0.1"
+    "typescript": "^5.8.3"
   }
 }
