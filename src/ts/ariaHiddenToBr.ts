@@ -1,5 +1,5 @@
 /**
- * 全てのbrタグにaria-hidden="true"を付与
+ * 全てのbr, wbrタグにaria-hidden="true"を付与
  */
 
 export const addAriaHiddenToBr = (): void => {
