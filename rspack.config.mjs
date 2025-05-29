@@ -49,6 +49,21 @@ export default defineConfig((env, argv) => {
       ],
     },
 
+    plugins: [
+      new rspack.CopyRspackPlugin({
+        patterns: [
+          {
+            from: path.resolve(__dirname, "src/img/"),
+            to: path.resolve(__dirname, "dist/assets/img/"),
+          },
+          {
+            from: path.resolve(__dirname, "public/"),
+            to: path.resolve(__dirname, "dist/"),
+          },
+        ],
+      }),
+    ],
+
     optimization: {
       minimizer: isProduction
         ? [
