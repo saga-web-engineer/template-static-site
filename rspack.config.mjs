@@ -89,6 +89,7 @@ export default defineConfig((env, argv) => {
         // ファイルをディスクに書き出す
         writeToDisk: true,
       },
+      open: true,
     },
   };
 });
