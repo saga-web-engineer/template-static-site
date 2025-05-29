@@ -34,11 +34,3 @@ const debounce = <T extends unknown[], R>(callback: (...args: T) => R): ((...arg
     timeout = requestAnimationFrame(() => callback(...args));
   };
 };
-
-/**
- * DOMContentLoadedイベントでビューポート機能を初期化
- * ページ読み込み完了後にビューポート制御を開始する
- */
-document.addEventListener('DOMContentLoaded', () => {
-  initializeViewport();
-});
