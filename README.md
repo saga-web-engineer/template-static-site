@@ -18,15 +18,13 @@ Voltaで管理しています。
 2.  **develop**
 
     ```
-    npm run watch:all
+    npm run dev
     ```
 
 3.  **deploy**
 
-    デプロイする前に実行してmap等の不要ファイルを削除します。
-
     ```
-    npm run prepare:all
+    npm run build
     ```
 
 ## format
