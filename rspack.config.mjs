@@ -68,8 +68,7 @@ export default defineConfig((env, argv) => {
       minimizer: isProduction
         ? [
             new rspack.SwcJsMinimizerRspackPlugin({
-              // パッケージのライセンス情報をjsファイルの中に含めない
-              extractComments: false,
+              // extractComments: true,
             }),
           ]
         : [],
