@@ -55,6 +55,11 @@ export default defineConfig((env, argv) => {
             },
             {
               loader: "postcss-loader",
+              options: {
+                postcssOptions: {
+                  plugins: ["autoprefixer", "postcss-sort-media-queries"],
+                },
+              },
             },
             "sass-loader",
           ],
