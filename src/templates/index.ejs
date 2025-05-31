@@ -9,9 +9,11 @@
 %>
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<%- include('include/_head', {head: meta}) %>
+  <%- include('include/_head', {head: meta}) %>
 </head>
+
 <body>
   <div class="layout u-grid">
     <%- include('include/_header') %>
@@ -43,20 +45,15 @@
             logo.forEach(value => {
           %>
           <figure class="p-top-logo__img u-grid u-justify-center">
-            <img
-              class="u-mx-auto"
-              src="<%= path %>assets/img/top/<%= value.path %>.svg"
-              alt=""
-              width="<%= value.width %>"
-              height="<%= value.height %>"
-            >
+            <img class="u-mx-auto" src="<%= path %>assets/img/top/<%= value.path %>.svg" alt="" width="<%= value.width %>" height="<%= value.height %>">
             <figcaption class="u-text-center"><%= value.name %></figcaption>
           </figure>
           <% }) %>
-        </ul>
+        </div>
       </div>
     </main>
     <%- include('include/_footer') %>
   </div>
 </body>
+
 </html>
