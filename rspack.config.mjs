@@ -17,14 +17,15 @@ export default defineConfig((env, argv) => {
 
     // エントリーファイル
     entry: {
-      index: "./src/ts/index.ts",
+      index: ["./src/ts/index.ts", "./src/scss/style.scss"],
     },
 
     output: {
       // 出力ディレクトリ
-      path: path.resolve(__dirname, "dist/assets/js"),
+      path: path.resolve(__dirname, "dist/assets"),
       // 出力ファイル
-      filename: "bundle.js",
+      filename: "js/bundle.js",
+      cssFilename: "css/style.css",
       clean: true,
     },
 
@@ -46,6 +47,19 @@ export default defineConfig((env, argv) => {
           },
           type: "javascript/auto",
         },
+        {
+          test: /\.scss$/,
+          use: [
+            {
+              loader: "builtin:lightningcss-loader",
+            },
+            {
+              loader: "postcss-loader",
+            },
+            "sass-loader",
+          ],
+          type: "css/auto",
+        },
       ],
     },
 
@@ -64,12 +78,18 @@ export default defineConfig((env, argv) => {
       }),
     ],
 
+    // TODO:v2でデフォルト有効化になるため削除する
+    experiments: {
+      css: true,
+    },
+
     optimization: {
       minimizer: isProduction
         ? [
             new rspack.SwcJsMinimizerRspackPlugin({
               // extractComments: true,
             }),
+            new rspack.LightningCssMinimizerRspackPlugin(),
           ]
         : [],
     },
