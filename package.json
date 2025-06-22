@@ -25,6 +25,9 @@
     "not ios < 15",
     "safari > 15, ios > 15"
   ],
+  "dependencies": {
+    "@s.a.g.a/reset-css": "^0.0.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@rspack/cli": "^1.3.15",
