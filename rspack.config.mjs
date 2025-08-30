@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('@rspack/core').Configuration} */
-export default defineConfig((env, argv) => {
+export default defineConfig((_env, argv) => {
   const isProduction = argv.mode === "production";
 
   return {
