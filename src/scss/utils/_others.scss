@@ -9,21 +9,25 @@
       justify-content: center;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       justify-content: center;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       justify-content: center;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       justify-content: center;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       justify-content: center;
@@ -39,21 +43,25 @@
       justify-content: space-between;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       justify-content: space-between;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       justify-content: space-between;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       justify-content: space-between;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       justify-content: space-between;
@@ -73,21 +81,25 @@
       justify-content: flex-end;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       justify-content: flex-end;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       justify-content: flex-end;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       justify-content: flex-end;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       justify-content: flex-end;
@@ -104,21 +116,25 @@
       align-items: center;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       align-items: center;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       align-items: center;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       align-items: center;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       align-items: center;
@@ -134,21 +150,25 @@
       align-items: flex-start;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       align-items: flex-start;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       align-items: flex-start;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       align-items: flex-start;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       align-items: flex-start;
@@ -164,21 +184,25 @@
       align-items: flex-end;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       align-items: flex-end;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       align-items: flex-end;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       align-items: flex-end;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       align-items: flex-end;
@@ -195,21 +219,25 @@
       flex-direction: column;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       flex-direction: column;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       flex-direction: column;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       flex-direction: column;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       flex-direction: column;
@@ -229,21 +257,25 @@
       flex-direction: row;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       flex-direction: row;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       flex-direction: row;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       flex-direction: row;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       flex-direction: row;
@@ -259,21 +291,25 @@
       flex-direction: row-reverse;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       flex-direction: row-reverse;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       flex-direction: row-reverse;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       flex-direction: row-reverse;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       flex-direction: row-reverse;
@@ -289,21 +325,25 @@
       flex-wrap: wrap;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       flex-wrap: wrap;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       flex-wrap: wrap;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       flex-wrap: wrap;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       flex-wrap: wrap;
@@ -320,21 +360,25 @@
       text-align: right;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       text-align: right;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       text-align: right;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       text-align: right;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       text-align: right;
@@ -354,21 +398,25 @@
       text-align: justify;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       text-align: justify;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       text-align: justify;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       text-align: justify;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       text-align: justify;

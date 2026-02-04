@@ -9,6 +9,7 @@
       margin-top: 0;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       margin-top: 0;
@@ -39,6 +40,7 @@
       margin-left: 0;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       margin-left: 0;
@@ -55,6 +57,7 @@
       margin-right: 0;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       margin-right: 0;
@@ -71,6 +74,7 @@
       margin-inline: 0;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       margin-inline: 0;

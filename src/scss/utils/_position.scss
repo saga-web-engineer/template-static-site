@@ -8,21 +8,25 @@
       position: relative;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       position: relative;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       position: relative;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       position: relative;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       position: relative;
@@ -38,21 +42,25 @@
       position: absolute;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       position: absolute;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       position: absolute;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       position: absolute;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       position: absolute;

@@ -8,21 +8,25 @@
       display: flex;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       display: flex;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       display: flex;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       display: flex;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       display: flex;
@@ -38,21 +42,25 @@
       display: block;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       display: block;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       display: block;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       display: block;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       display: block;
@@ -68,21 +76,25 @@
       display: none;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       display: none;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       display: none;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       display: none;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       display: none;
@@ -98,21 +110,25 @@
       display: grid;
     }
   }
+
   &\:md {
     @include t.responsive(md) {
       display: grid;
     }
   }
+
   &\:lg {
     @include t.responsive(lg) {
       display: grid;
     }
   }
+
   &\:xl {
     @include t.responsive(xl) {
       display: grid;
     }
   }
+
   &\:xxl {
     @include t.responsive(xxl) {
       display: grid;
