@@ -10,9 +10,8 @@
   "ignoreFiles": [
     "**/node_modules/**",
     "dist/assets/css/*.css",
-    "src/scss/foundation/*.scss",
     "src/scss/tools/_variables.scss",
-    "src/scss/utility/*.scss"
+    "src/scss/utils/*.scss"
   ],
 
   "rules": {
