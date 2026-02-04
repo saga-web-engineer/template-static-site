@@ -16,8 +16,8 @@
     "predev": "npm run clean"
   },
   "volta": {
-    "node": "22.11.0",
-    "npm": "10.9.0"
+    "node": "24.13.0",
+    "npm": "11.6.2"
   },
   "browserslist": [
     "> 0.2%, not dead",
