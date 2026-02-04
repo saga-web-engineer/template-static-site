@@ -35,23 +35,4 @@ $breakpoints: (
 
   // duration
   --duration-primary: 0.3s;
-
-  --base-font-size: 16;
-  --rem: calc(1rem / var(--base-font-size));
-
-  @media (width >= 576px) {
-    --sm: true;
-  }
-  @media (width >= 768px) {
-    --md: true;
-  }
-  @media (width >= 992px) {
-    --lg: true;
-  }
-  @media (width >= 1200px) {
-    --xl: true;
-  }
-  @media (width >= 1400px) {
-    --xxl: true;
-  }
 }
