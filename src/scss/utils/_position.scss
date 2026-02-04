@@ -1,0 +1,69 @@
+@use '../tools/' as t;
+
+.u-relative {
+  position: relative;
+
+  &\:sm {
+    @include t.responsive(sm) {
+      position: relative;
+    }
+  }
+  &\:md {
+    @include t.responsive(md) {
+      position: relative;
+    }
+  }
+  &\:lg {
+    @include t.responsive(lg) {
+      position: relative;
+    }
+  }
+  &\:xl {
+    @include t.responsive(xl) {
+      position: relative;
+    }
+  }
+  &\:xxl {
+    @include t.responsive(xxl) {
+      position: relative;
+    }
+  }
+}
+
+.u-absolute {
+  position: absolute;
+
+  &\:sm {
+    @include t.responsive(sm) {
+      position: absolute;
+    }
+  }
+  &\:md {
+    @include t.responsive(md) {
+      position: absolute;
+    }
+  }
+  &\:lg {
+    @include t.responsive(lg) {
+      position: absolute;
+    }
+  }
+  &\:xl {
+    @include t.responsive(xl) {
+      position: absolute;
+    }
+  }
+  &\:xxl {
+    @include t.responsive(xxl) {
+      position: absolute;
+    }
+  }
+}
+
+.u-fixed {
+  position: fixed;
+}
+
+.u-sticky {
+  position: sticky;
+}

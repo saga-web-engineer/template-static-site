@@ -11,7 +11,7 @@
     "**/node_modules/**",
     "dist/assets/css/*.css",
     "src/scss/foundation/*.scss",
-    "src/scss/tool/_variables.scss",
+    "src/scss/tools/_variables.scss",
     "src/scss/utility/*.scss"
   ],
 
