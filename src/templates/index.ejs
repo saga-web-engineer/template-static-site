@@ -1,11 +1,10 @@
+<%- include('_config') %>
 <%
   const meta = {
-    title: 'Static Site Template',
+    title: config.siteName,
     description: 'EJS + Sass(scss) + TypeScriptで静的なWebサイトを構築するためのテンプレート',
-    url: 'https://exmaple.com'
+    url: config.baseUrl
   };
-
-  const path = "/";
 %>
 <!DOCTYPE html>
 <html lang="ja">
@@ -45,7 +44,7 @@
             logo.forEach(value => {
           %>
           <figure class="p-top-logo__img u-grid u-justify-center">
-            <img class="u-mx-auto" src="<%= path %>assets/img/top/<%= value.path %>.svg" alt="" width="<%= value.width %>" height="<%= value.height %>">
+            <img class="u-mx-auto" src="<%= config.path %>assets/img/top/<%= value.path %>.svg" alt="" width="<%= value.width %>" height="<%= value.height %>">
             <figcaption class="u-text-center"><%= value.name %></figcaption>
           </figure>
           <% }) %>

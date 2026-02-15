@@ -1,11 +1,10 @@
+<%- include('../_config') %>
 <%
   const meta = {
-    title: 'About | Static Site Template',
+    title: `About | ${config.siteName}`,
     description: 'EJS + Sass(scss) + TypeScriptで静的なWebサイトを構築するためのテンプレートのAboutページ',
-    url: 'https://exmaple.com/about/'
+    url: `${config.baseUrl}/about/`
   };
-
-  const path = "/";
 %>
 <!DOCTYPE html>
 <html lang="ja">
