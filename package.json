@@ -11,7 +11,7 @@
     "watch:assets": "rspack dev",
     "format:scss": "stylelint --fix \"**/*.scss\"",
     "format:ts": "biome check --write src/ts/",
-    "format:all": "run-p format:scss format:ts",
+    "format": "run-p format:scss format:ts",
     "clean": "rimraf dist",
     "predev": "npm run clean"
   },
