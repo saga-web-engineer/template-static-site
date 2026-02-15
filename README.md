@@ -29,5 +29,5 @@ Voltaで管理しています。
 
 ## format
 ```
-npm run format:all
+npm run format
 ```
