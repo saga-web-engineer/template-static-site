@@ -1,4 +1,4 @@
-<%- include('_config') %>
+<%- include('../_config') %>
 <%
   const meta = {
     title: config.siteName,
@@ -10,12 +10,12 @@
 <html lang="ja">
 
 <head>
-  <%- include('components/_head', {head: meta}) %>
+  <%- include('../components/_head', {head: meta}) %>
 </head>
 
 <body>
   <div class="layout u-grid">
-    <%- include('components/_header') %>
+    <%- include('../components/_header') %>
     <main class="p-top">
       <div class="c-wrapper u-h-full u-mx-auto">
         <div class="p-top-logo u-grid u-h-full u-items-center">
@@ -51,7 +51,7 @@
         </div>
       </div>
     </main>
-    <%- include('components/_footer') %>
+    <%- include('../components/_footer') %>
   </div>
 </body>
 
