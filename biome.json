@@ -25,7 +25,12 @@
         "useBlockStatements": "off"
       },
       "suspicious": {
-        "noConsole": "error",
+        "noConsole": {
+          "level": "error",
+          "options": {
+            "allow": ["error"]
+          }
+        },
         "noEmptyBlockStatements": "error",
         "useAwait": "error"
       }
