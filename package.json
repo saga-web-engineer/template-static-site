@@ -29,11 +29,11 @@
     "@s.a.g.a/reset-css": "^0.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.4",
-    "@rspack/cli": "^1.7.6",
-    "@rspack/core": "^1.7.6",
+    "@biomejs/biome": "2.4.9",
+    "@rspack/cli": "^1.7.10",
+    "@rspack/core": "^1.7.10",
     "@types/node": "^24.10.10",
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.4.27",
     "chokidar-cli": "^3.0.0",
     "ejs-cli": "^2.2.3",
     "npm-run-all2": "^8.0.4",
