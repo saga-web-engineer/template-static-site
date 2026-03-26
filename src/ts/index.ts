@@ -1,6 +1,6 @@
-import { addAriaHiddenToBr } from './ariaHiddenToBr';
-import { isChrome } from './checkBrowsers';
-import { initializeViewport } from './switchViewport';
+import { addAriaHiddenToBr } from '@/ariaHiddenToBr';
+import { isChrome } from '@/checkBrowsers';
+import { initializeViewport } from '@/switchViewport';
 
 document.addEventListener(
   'DOMContentLoaded',
