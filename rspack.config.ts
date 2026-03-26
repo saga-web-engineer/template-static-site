@@ -106,6 +106,9 @@ export default defineConfig((_env, argv) => {
 
     resolve: {
       extensions: ['.ts', '.js', '.json'],
+      alias: {
+        '@': path.resolve(__dirname, 'src/ts'),
+      },
     },
 
     // 開発用設定
