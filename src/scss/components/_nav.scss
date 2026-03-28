@@ -1,5 +1,7 @@
 @use '../tools/' as t;
 
 .c-nav__list {
+  display: flex;
   gap: 1em;
+  align-items: center;
 }

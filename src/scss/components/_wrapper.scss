@@ -1,5 +1,5 @@
 @use '../tools/' as t;
 
 .c-wrapper {
-  width: min(90%, 1060px);
+  inline-size: min(90%, 1060px);
 }

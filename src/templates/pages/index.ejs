@@ -14,11 +14,11 @@
 </head>
 
 <body>
-  <div class="layout u-grid">
+  <div class="layout">
     <%- include('../components/_header') %>
     <main class="p-top">
-      <div class="c-wrapper u-h-full u-mx-auto">
-        <div class="p-top-logo u-grid u-h-full u-items-center">
+      <div class="c-wrapper u-mx-auto p-top__wrapper">
+        <div class="p-topLogo">
           <%
             const logo = [
               {
@@ -43,9 +43,9 @@
 
             logo.forEach(value => {
           %>
-          <figure class="p-top-logo__img u-grid u-justify-center">
+          <figure class="p-topLogo__img">
             <img class="u-mx-auto" src="<%= config.path %>assets/img/top/<%= value.path %>.svg" alt="" width="<%= value.width %>" height="<%= value.height %>">
-            <figcaption class="u-text-center"><%= value.name %></figcaption>
+            <figcaption><%= value.name %></figcaption>
           </figure>
           <% }) %>
         </div>

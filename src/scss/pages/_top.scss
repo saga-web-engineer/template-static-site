@@ -1,13 +1,23 @@
 @use '../tools/' as t;
 
-.p-top-logo {
-  gap: 1em;
+.p-top__wrapper {
+  block-size: 100%;
+}
 
-  @include t.responsive(sm) {
+.p-topLogo {
+  display: grid;
+  gap: 1em;
+  align-items: center;
+  block-size: 100%;
+
+  @container style(--sm: true) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.p-top-logo__img {
+.p-topLogo__img {
+  display: grid;
   gap: 0.5em;
+  justify-content: center;
+  text-align: center;
 }

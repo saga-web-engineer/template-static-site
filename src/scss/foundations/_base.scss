@@ -1,6 +1,57 @@
 @use '../tools/' as t;
 @use '@s.a.g.a/reset-css';
 
+:root {
+  // color
+  --white-color-primary: #fff;
+  --black-color-primary: #333;
+  --black-color-secondary: #000;
+  --gray-color-primary: #505050;
+  --gray-color-secondary: #ebebeb;
+  --gray-color-tertiary: #cac9c9;
+  --gray-color-quaternary: #b4b4b4;
+  --brown-color-primary: #5e3528;
+  --brown-color-secondary: #fffcf7;
+  --yellow-color-primary: #ffdc1b;
+  --red-color-primary: #ec3348;
+  --green-color-primary: #3cbb84;
+  --shadow-color: rgb(16 18 39 / 30%);
+
+  // font
+  --base-font-size: 16;
+  --rem: calc(1rem / var(--base-font-size));
+  --font-gothic: 'Noto Sans JP', sans-serif;
+
+  // easing
+  --easing-hover: ease-in-out;
+  --easing-faded: cubic-bezier(0, 0, 0.2, 1);
+  --easing-overlay: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  // duration
+  --duration-primary: 0.3s;
+
+  // breakpoints
+  @media (width >= 576px) {
+    --sm: true;
+  }
+
+  @media (width >= 768px) {
+    --md: true;
+  }
+
+  @media (width >= 992px) {
+    --lg: true;
+  }
+
+  @media (width >= 1200px) {
+    --xl: true;
+  }
+
+  @media (width >= 1400px) {
+    --xxl: true;
+  }
+}
+
 :target {
   scroll-margin-top: 120px;
 }
@@ -13,7 +64,7 @@ html {
 
 body {
   font-family: var(--font-gothic);
-  font-size: clamp(t.rem(14px), t.rem(10px) + 1.04vw, t.rem(18px));
+  font-size: clamp(14 * var(--rem), 10 * var(--rem) + 1.04vw, 18 * var(--rem));
   font-weight: 400;
   line-height: 1.8;
   color: var(--black-color-primary);

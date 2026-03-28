@@ -4,31 +4,31 @@
   display: block;
 
   &\:sm {
-    @include t.responsive(sm) {
+    @container style(--sm: true) {
       display: block;
     }
   }
 
   &\:md {
-    @include t.responsive(md) {
+    @container style(--md: true) {
       display: block;
     }
   }
 
   &\:lg {
-    @include t.responsive(lg) {
+    @container style(--lg: true) {
       display: block;
     }
   }
 
   &\:xl {
-    @include t.responsive(xl) {
+    @container style(--xl: true) {
       display: block;
     }
   }
 
   &\:xxl {
-    @include t.responsive(xxl) {
+    @container style(--xxl: true) {
       display: block;
     }
   }
@@ -38,31 +38,31 @@
   display: none;
 
   &\:sm {
-    @include t.responsive(sm) {
+    @container style(--sm: true) {
       display: none;
     }
   }
 
   &\:md {
-    @include t.responsive(md) {
+    @container style(--md: true) {
       display: none;
     }
   }
 
   &\:lg {
-    @include t.responsive(lg) {
+    @container style(--lg: true) {
       display: none;
     }
   }
 
   &\:xl {
-    @include t.responsive(xl) {
+    @container style(--xl: true) {
       display: none;
     }
   }
 
   &\:xxl {
-    @include t.responsive(xxl) {
+    @container style(--xxl: true) {
       display: none;
     }
   }
