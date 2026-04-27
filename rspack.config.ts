@@ -88,11 +88,6 @@ export default defineConfig((_env, argv) => {
       }),
     ],
 
-    // TODO:v2でデフォルト有効化になるため削除する
-    experiments: {
-      css: true,
-    },
-
     optimization: {
       minimizer: isProduction
         ? [

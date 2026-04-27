@@ -30,8 +30,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.9",
-    "@rspack/cli": "^1.7.10",
-    "@rspack/core": "^1.7.10",
+    "@rspack/cli": "^2.0.0",
+    "@rspack/core": "^2.0.0",
+    "@rspack/dev-server": "^2.0.0",
     "@types/node": "^24.12.0",
     "autoprefixer": "^10.4.27",
     "chokidar-cli": "^3.0.0",
