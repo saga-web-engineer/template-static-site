@@ -5,7 +5,7 @@ export default {
 
   plugins: ['stylelint-order', 'stylelint-prettier'],
 
-  ignoreFiles: ['**/node_modules/**', 'dist/assets/css/*.css', 'src/scss/utils/*.scss'],
+  ignoreFiles: ['**/node_modules/**', 'dist/assets/css/*.css'],
 
   rules: {
     'prettier/prettier': true,
