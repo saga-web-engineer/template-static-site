@@ -15,10 +15,6 @@
     "clean": "rimraf dist",
     "predev": "npm run clean"
   },
-  "volta": {
-    "node": "24.14.1",
-    "npm": "11.11.0"
-  },
   "browserslist": [
     "> 0.2%, not dead",
     "> 0.2% in JP, not dead",

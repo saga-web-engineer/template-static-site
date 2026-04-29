@@ -1,11 +1,6 @@
 # template-static-site
 EJS + Sass + TypeScriptで静的なWebサイトを構築するためのテンプレート 
 
-## Version
-Voltaで管理しています。
-- Node 24.14.1
-- npm 11.11.0
-
 ## start
 1.  **install**  
 
