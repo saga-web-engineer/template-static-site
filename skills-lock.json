@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "rspack-best-practices": {
+      "source": "rstackjs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "1fa1f81e135ff913271a538f995aa378649b22775a588a573c861cf7f507ebd5"
+    },
+    "rspack-debugging": {
+      "source": "rstackjs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "037ccda420d1a07ff1f7acf283edbe171a3373613fb12ff5de85bf2b63c3b653"
+    },
+    "rspack-split-chunks": {
+      "source": "rstackjs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "d93d64f4f3f58ac2b56c293a96954e540b6db512141c1fd0c61bfb9157e9cc50"
+    },
+    "rspack-v2-upgrade": {
+      "source": "rstackjs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "117b7c12d7d9cdcd24dd2739af036fac1b0fd8a90a424620ad2bb0a1f6b85bd7"
+    }
+  }
+}
