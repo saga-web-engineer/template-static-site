@@ -11,8 +11,8 @@ export default {
   ignoreFiles: [
     '**/node_modules/**',
     'dist/assets/css/*.css',
-    'src/scss/tools/_variables.scss',
-    'src/scss/utils/*.scss',
+    'src/styles/tools/_variables.scss',
+    'src/styles/utils/*.scss',
   ],
 
   rules: {

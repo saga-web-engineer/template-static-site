@@ -1,0 +1,19 @@
+import { config } from '../config';
+
+export const Header = () => (
+  <header class="header u-z-bottom">
+    <div class="c-wrapper header__wrapper">
+      <h1 class="header__title">Static Site Template</h1>
+      <nav class="c-nav">
+        <ul class="c-nav__list">
+          <li>
+            <a href={config.path}>Top</a>
+          </li>
+          <li>
+            <a href={`${config.path}about/`}>About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+);
