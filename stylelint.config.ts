@@ -1,19 +1,11 @@
 import type { Config } from 'stylelint';
 
 export default {
-  extends: [
-    'stylelint-config-standard-scss',
-    'stylelint-config-recess-order',
-  ],
+  extends: ['stylelint-config-standard-scss', 'stylelint-config-recess-order'],
 
   plugins: ['stylelint-order', 'stylelint-prettier'],
 
-  ignoreFiles: [
-    '**/node_modules/**',
-    'dist/assets/css/*.css',
-    'src/styles/tools/_variables.scss',
-    'src/styles/utils/*.scss',
-  ],
+  ignoreFiles: ['**/node_modules/**', 'dist/assets/css/*.css', 'src/styles/utils/*.scss'],
 
   rules: {
     'prettier/prettier': true,
